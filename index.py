@@ -6,10 +6,11 @@ from mysql.connector import Error
 
 try:
     connection = mysql.connector.connect(
-        host='',
+        host='localhost',  # No need for 'http://'
+        port=3307,
         user='root',
-        password='root',
-        database='meubanco'
+        password='my-secret-pw',
+        database='teste'
     )
 
     if connection.is_connected():
