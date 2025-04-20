@@ -6,7 +6,7 @@ from mysql.connector import Error
 
 try:
     connection = mysql.connector.connect(
-        host='localhost',  # No need for 'http://'
+        host='localhost',
         port=3307,
         user='root',
         password='my-secret-pw',
